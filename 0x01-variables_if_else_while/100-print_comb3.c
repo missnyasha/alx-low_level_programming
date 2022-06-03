@@ -7,30 +7,24 @@
  */
 int main(void)
 {
-	int lett;
-	int p = 0;
+	int x;
+	int y;
 
-	while (p < 10)
+	for (x = 0; x < 9; x++)
 	{
-		lett = 0;
-		while (lett < 10)
+		for (y = x + 1; y < 10; y++)
 		{
-			if (p != lett && p < lett)
-			{
-				putchar('0' + p);
-				putchar('0' + lett);
+			putchar('0' + x % 10);
+			putchar('0' + y % 10);
 
-				if (lett + d != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-
-			lett++;
+			if (x == 8 && y == 9)
+				break;
+			putchar(',');
+			putchar(' ');
 		}
-		p++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
