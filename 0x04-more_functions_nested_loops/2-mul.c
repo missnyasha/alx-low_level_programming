@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * program mul - returns the product of its parameters
  * Return:0
